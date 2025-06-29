@@ -11,9 +11,9 @@
 
 The **Bharat Gas Agency Project** is a Java-based console application simulating a real-world gas cylinder booking and delivery system. It was developed as an academic project to demonstrate:
 
-- ✅ Java OOP principles  
-- 📁 File handling  
-- 🔐 OTP validation  
+- ✅ Java OOP principles
+- 📁 File handling
+- 🔐 OTP validation
 - 📊 Report & Invoice generation
 
 ---
@@ -34,11 +34,11 @@ The **Bharat Gas Agency Project** is a Java-based console application simulating
 
 ## 🚀 Features
 
-- 🔄 **Dynamic Booking**: Handle 1–5 deliveries per session  
-- 🔐 **OTP System**: 4-digit OTP verification for secured delivery  
-- 📞 **Mobile Validation**: Consumer is validated by registered number  
-- ⛔ **30-Day Rule**: Refill not allowed within 30 days (test bypass supported)  
-- 📊 **Reports**: Cylinder count, late deliveries, and pending bookings  
+- 🔄 **Dynamic Booking**: Handle 1–5 deliveries per session
+- 🔐 **OTP System**: 4-digit OTP verification for secured delivery
+- 📞 **Mobile Validation**: Consumer is validated by registered number
+- ⛔ **30-Day Rule**: Refill not allowed within 30 days (test bypass supported)
+- 📊 **Reports**: Cylinder count, late deliveries, and pending bookings
 - 🧾 **Invoice Generator**: Delivery bill with name, amount, and date
 
 ---
@@ -53,6 +53,7 @@ The **Bharat Gas Agency Project** is a Java-based console application simulating
 ---
 
 ## 📁 Project Structure
+
 bharat-gas-agency-project/
 │
 ├── Customers/
@@ -72,6 +73,7 @@ bharat-gas-agency-project/
 ## 📦 Installation
 
 ### Step 1: Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/bharat-gas-agency-project.git
 cd bharat-gas-agency-project
@@ -129,10 +131,10 @@ Enter consumer's mobile number: 9990809987
 📞 Single Cylinder Holders: Parvati (9990809987)
 
 🧾 Invoice:
-Customer: Parvati  
-Delivered By: John Doe  
-Amount: ₹825.0  
-Booking Date: 29/06/2025  
+Customer: Parvati
+Delivered By: John Doe
+Amount: ₹825.0
+Booking Date: 29/06/2025
 Delivery Date: 06/07/2025
 🤝 Contribution
 Want to improve or add features?
@@ -171,3 +173,4 @@ If you want, I can now also give you:
 3. ✅ Custom banner image (optional – just tell me the text & style)
 
 Let me know which ones you'd like!
+```
