@@ -33,16 +33,22 @@ cd bharat-gas-agency-project
 Compile the Project
 
 Open Git Bash in the src directory:cd src
-javac -d . Customers/_.java gasBooking/_.java gasSupplier/\*.java
+javac -d . Customers/*.java gasBooking/*.java gasSupplier/*.java
+
+
+
 
 Run the Application
 java Customers.Main
+
+
 
 Usage
 
 Start the Program
 
 Run the compiled Main.java file to launch the application.
+
 
 Input Options
 
@@ -53,16 +59,21 @@ Last delivery date (dd/MM/yyyy)
 Booking date (dd/MM/yyyy)
 Delivery date (dd/MM/yyyy)
 
+
 If valid (outside 30-day window), the program generates an OTP and simulates sending it to the consumer’s mobile.
+
 
 OTP and Validation
 
 Copy the displayed OTP, send it to yourself via a messaging app, and paste it when prompted.
 The delivery person enters the consumer’s mobile number to validate the recipient.
 
+
 Output
 
 View reports (e.g., cylinder counts per month, late deliveries) and invoices for successful deliveries.
+
+
 
 Project Structure
 
@@ -71,13 +82,9 @@ gasBooking/: Includes Booking.java (handles booking logic) and Delivery.java (ma
 gasSupplier/: Contains gasAgency.java (placeholder for supplier logic).
 
 Example Workflow
-
----
-
+****************************************************************
                     Bharat Gas Agency
-
----
-
+****************************************************************
 Skip 30-day validation for testing? (yes/no):
 [Input: no]
 How many deliveries to process? (1-5):
@@ -115,9 +122,7 @@ Invoice for Parvati (Delivered by: John Doe)
 Date: 29/06/2025
 Amount: 825.0
 Delivery Date: 06/07/2025
-
----
-
+-------------------
 Program completed.
 
 Contributing
