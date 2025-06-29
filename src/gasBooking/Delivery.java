@@ -30,10 +30,11 @@ public class Delivery extends Booking {
             try {
                 customerOtp = sc.nextInt();
                 sc.nextLine(); // Clear the newline character after nextInt
-                if (customerOtp == getOtp())
-                    setStatus("D");
-                else
+                if (customerOtp == getOtp()) {
+                    validateConsumer(sc); // Add consumer validation after OTP match
+                } else {
                     setStatus("C");
+                }
             } catch (InputMismatchException e) {
                 System.err.println("Error: Invalid OTP. Must be a number. Setting to Canceled.");
                 setStatus("C");
@@ -44,8 +45,20 @@ public class Delivery extends Booking {
         }
     }
 
+    private void validateConsumer(Scanner sc) {
+        System.out.println("Delivery Person: Enter consumer's mobile number to validate:");
+        String enteredMobile = sc.nextLine().trim();
+        if (enteredMobile.equals(super.getMobile())) {
+            setStatus("D");
+            System.out.println("Consumer validated. Delivery confirmed.");
+        } else {
+            setStatus("C");
+            System.out.println("Error: Mobile number does not match. Delivery canceled.");
+        }
+    }
+
     public void delPersonalDetails(Scanner sc) {
-        System.out.println("Enter delivery person name:");
+        System.out.println("Enter delivery person name for this delivery:");
         delPersonName = sc.nextLine();
     }
 

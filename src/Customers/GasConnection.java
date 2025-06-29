@@ -5,16 +5,23 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class GasConnection extends Customer {
+public class GasConnection {
+    private String name;
+    private String street;
+    private String area;
+    private String pincode;
+    private String mobile;
     private int numberOfCylinders;
-    private Date lastDate = null;
+    private Date lastDate;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
     public GasConnection(String name, String street, String area, String pincode, String mobile,
             int numberOfCylinders) {
-        super(name, street, area, pincode, mobile);
-        if (numberOfCylinders <= 0)
-            throw new IllegalArgumentException("Number of cylinders must be positive");
+        this.name = name;
+        this.street = street;
+        this.area = area;
+        this.pincode = pincode;
+        this.mobile = mobile;
         this.numberOfCylinders = numberOfCylinders;
     }
 
@@ -36,11 +43,31 @@ public class GasConnection extends Customer {
         } while (true);
     }
 
-    public int getNumberOfCylinders() {
-        return numberOfCylinders;
-    }
-
     public Date getLastDate() {
         return lastDate;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public String getPincode() {
+        return pincode;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public int getNumberOfCylinders() {
+        return numberOfCylinders;
     }
 }

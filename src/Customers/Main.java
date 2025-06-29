@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Main {
     static int bcount = 0, ccount = 0, dcount = 0, pcount = 0;
-    static String dpname;
     static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public static void main(String[] args) {
@@ -27,14 +26,29 @@ public class Main {
             String skipValidation = sc.nextLine().trim().toLowerCase();
             boolean skip = skipValidation.equals("yes");
 
-            for (Delivery d : deliveries) {
-                d.setLastDate(sc);
-                d.getDates(sc);
-                if (!skip)
-                    d.validate(); // Only validate if not skipping
-                d.delPersonalDetails(sc);
-                d.amountCalc();
-                d.verifyOtp(sc);
+            System.out.println("How many deliveries to process? (1-5):");
+            int numDeliveries = 0;
+            try {
+                numDeliveries = Integer.parseInt(sc.nextLine().trim());
+                if (numDeliveries < 1 || numDeliveries > 5) {
+                    System.err.println("Error: Number must be between 1 and 5. Defaulting to 1.");
+                    numDeliveries = 1;
+                }
+            } catch (NumberFormatException e) {
+                System.err.println("Error: Invalid number. Defaulting to 1.");
+                numDeliveries = 1;
+            }
+
+            for (int i = 0; i < numDeliveries && i < deliveries.length; i++) {
+                System.out.println("Please enter the " + getOrdinal(i + 1) + " delivery details...");
+                deliveries[i].setLastDate(sc);
+                deliveries[i].getDates(sc);
+                if (!skip && deliveries[i].isValid()) { // Only process if not skipped and valid
+                    deliveries[i].validate();
+                    deliveries[i].delPersonalDetails(sc);
+                    deliveries[i].amountCalc();
+                    deliveries[i].verifyOtp(sc);
+                }
             }
             cylinderCount(deliveries);
             checkLateDel(deliveries);
@@ -47,6 +61,23 @@ public class Main {
         }
 
         System.out.println("Program completed.");
+    }
+
+    // Helper method to get ordinal numbers (1st, 2nd, 3rd, etc.)
+    private static String getOrdinal(int number) {
+        if (number >= 11 && number <= 13) {
+            return number + "th";
+        }
+        switch (number % 10) {
+            case 1:
+                return number + "st";
+            case 2:
+                return number + "nd";
+            case 3:
+                return number + "rd";
+            default:
+                return number + "th";
+        }
     }
 
     public static void cylinderCount(Delivery[] obj) {
@@ -91,15 +122,7 @@ public class Main {
     }
 
     public static void deliveryDetails(Delivery[] obj) {
-        System.out.println("Enter delivery person name:");
-        try (Scanner sc = new Scanner(System.in)) {
-            dpname = sc.nextLine();
-            for (Delivery d : obj) {
-                if ("D".equals(d.getStatus()) && d.getDelPersonName() != null && d.getDelPersonName().equals(dpname)) {
-                    System.out.println("Customer: " + d.getName() + ", Address: " + d.getStreet() + ", " + d.getArea());
-                }
-            }
-        }
+        // No need for dpname prompt; use per-delivery delPersonName
     }
 
     public static void printReport(Delivery[] obj) {
@@ -126,8 +149,9 @@ public class Main {
     public static void printInvoice(Delivery[] obj) {
         Date now = new Date();
         for (int i = 0; i < obj.length; i++) {
-            if ("D".equals(obj[i].getStatus())) {
-                System.out.println("Invoice for " + obj[i].getName());
+            if ("D".equals(obj[i].getStatus()) && obj[i].getDelPersonName() != null) {
+                System.out.println(
+                        "Invoice for " + obj[i].getName() + " (Delivered by: " + obj[i].getDelPersonName() + ")");
                 System.out.println("Date: " + sdf.format(now));
                 System.out.println("Amount: " + (obj[i].getAmount() != 0 ? obj[i].getAmount() : "N/A"));
                 System.out
