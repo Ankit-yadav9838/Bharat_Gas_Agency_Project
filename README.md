@@ -63,7 +63,7 @@ bharat-gas-agency-project/
 
 ## 📦 Installation
 
-```bash
+
 # Step 1: Clone the Repository
 git clone https://github.com/your-username/bharat-gas-agency-project.git
 cd bharat-gas-agency-project
@@ -74,34 +74,32 @@ javac -d . Customers/*.java gasBooking/*.java gasSupplier/*.java
 
 # Step 3: Run the Application
 java Customers.Main
-```
 
-▶️ Usage
+
+# ▶️ Usage
 Booking Flow:
 
-Enter whether to skip 30-day rule (for testing)
+* Enter whether to skip 30-day rule (for testing)
 
-Choose number of deliveries to process
+* Choose number of deliveries to process
 
-For each delivery, input:
+* For each delivery, input:
 
-Last delivery date
+ #Last delivery date
 
-Booking date
+ #Booking date
 
-Delivery date
+ #Delivery date
 
-If valid, OTP is generated and must be matched
+* If valid, OTP is generated and must be matched
 
-Consumer is validated by mobile number
+* Consumer is validated by mobile number
 
-📟 Sample Workflow
+# 📟 Sample Workflow
 
----
-
+****************************************************************
                     Bharat Gas Agency
-
----
+****************************************************************
 
 Skip 30-day validation for testing? (yes/no): no
 How many deliveries to process? (1-5): 2
@@ -134,23 +132,23 @@ Delivered By: John Doe
 Amount: ₹825.0  
 Booking Date: 29/06/2025  
 Delivery Date: 06/07/2025
-🤝 Contribution
+
+# 🤝 Contribution
 Want to improve or add features?
+1. Fork the repo
+2. Create your feature branch
 
-# 1. Fork the repo
+    git checkout -b feature-xyz
 
-# 2. Create your feature branch
+3. Commit your changes
 
-git checkout -b feature-xyz
+   git commit -m "Add feature: XYZ"
 
-# 3. Commit your changes
-
-git commit -m "Add feature: XYZ"
-
-# 4. Push to GitHub
+4. Push to GitHub
 
 git push origin feature-xyz
-📬 Contact
+
+# 📬 Contact
 Ankit Yadav
 📧 a.k.chaudhary9838@gmail.com
 🔗 LinkedIn
