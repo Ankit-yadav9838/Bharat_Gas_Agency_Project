@@ -1,24 +1,12 @@
 # 🇮🇳 Bharat Gas Agency Project 🔥
-
-![Java](https://img.shields.io/badge/Java-8%2B-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows11-informational)
-![License](https://img.shields.io/badge/License-MIT-brightgreen)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
----
-
-## 📌 Overview
-
+# 📌 Overview
 The **Bharat Gas Agency Project** is a Java-based console application simulating a real-world gas cylinder booking and delivery system. It was developed as an academic project to demonstrate:
-
 - ✅ Java OOP principles
 - 📁 File handling
 - 🔐 OTP validation
 - 📊 Report & Invoice generation
 
----
-
-## 📚 Table of Contents
+# 📚 Table of Contents
 
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
@@ -26,14 +14,9 @@ The **Bharat Gas Agency Project** is a Java-based console application simulating
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Sample Workflow](#-sample-workflow)
-- [Contribution](#-contribution)
-- [License](#-license)
 - [Contact](#-connect-with-me)
 
----
-
-## 🚀 Features
-
+ # 🚀 Features
 - 🔄 **Dynamic Booking**: Handle 1–5 deliveries per session
 - 🔐 **OTP System**: 4-digit OTP verification for secured delivery
 - 📞 **Mobile Validation**: Consumer is validated by registered number
@@ -42,8 +25,7 @@ The **Bharat Gas Agency Project** is a Java-based console application simulating
 - 🧾 **Invoice Generator**: Delivery bill with name, amount, and date
 
 ---
-
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 - 🖥️ **Language**: Java (JDK 8 or later)
 - 💻 **IDE**: Visual Studio Code + Git Bash
@@ -52,7 +34,7 @@ The **Bharat Gas Agency Project** is a Java-based console application simulating
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 bharat-gas-agency-project/
 │
@@ -70,9 +52,9 @@ bharat-gas-agency-project/
 
 ---
 
-## 📦 Installation
+# 📦 Installation
 
-### Step 1: Clone the Repository
+Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/bharat-gas-agency-project.git
@@ -82,7 +64,9 @@ cd src
 javac -d . Customers/*.java gasBooking/*.java gasSupplier/*.java
 Step 3: Run the Application
 java Customers.Main
-▶️ Usage
+
+
+# ▶️ Usage
 Booking Flow
 Enter whether to skip 30-day rule (for testing)
 
@@ -136,7 +120,7 @@ Delivered By: John Doe
 Amount: ₹825.0
 Booking Date: 29/06/2025
 Delivery Date: 06/07/2025
-🤝 Contribution
+# 🤝 Contribution
 Want to improve or add features?
 # 1. Fork the repo
 # 2. Create your feature branch
@@ -148,7 +132,7 @@ git commit -m "Add feature: XYZ"
 # 4. Push to GitHub
 git push origin feature-xyz
 
-📬 Connect With Me
+# 📬 Connect With Me
 Ankit Yadav
 📧 a.k.chaudhary9838@gmail.com
 🔗 https://www.linkedin.com/in/
