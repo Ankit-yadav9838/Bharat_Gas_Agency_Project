@@ -77,7 +77,7 @@ bharat-gas-agency-project/
 ```bash
 git clone https://github.com/your-username/bharat-gas-agency-project.git
 cd bharat-gas-agency-project
-### Step 2: Compile the Java Files
+Step 2: Compile the Java Files
 cd src
 javac -d . Customers/*.java gasBooking/*.java gasSupplier/*.java
 Step 3: Run the Application
@@ -148,29 +148,12 @@ git commit -m "Add feature: XYZ"
 # 4. Push to GitHub
 git push origin feature-xyz
 
-# 5. Open a Pull Request 🚀
-🪪 License
-This project is licensed under the MIT License.
-See the LICENSE file for details.
-
 📬 Connect With Me
 Ankit Yadav
-📧 ankit.yourmail@example.com
-🔗 LinkedIn
-🌐 Portfolio (optional)
+📧 a.k.chaudhary9838@gmail.com
+🔗 https://www.linkedin.com/in/
+ankit-yadav-063216265
 
 💡 “Build to learn, not just to deploy.” — Ankit Yadav
 
 
----
-
-## 📂 Files You Might Also Need
-
-If you want, I can now also give you:
-
-1. ✅ `LICENSE` file (MIT)
-2. ✅ `.gitignore` file (for Java)
-3. ✅ Custom banner image (optional – just tell me the text & style)
-
-Let me know which ones you'd like!
-```
