@@ -66,8 +66,9 @@ Step 3: Run the Application
 java Customers.Main
 
 
-# ▶️ Usage
-Booking Flow
+▶️ Usage
+Booking Flow:
+
 Enter whether to skip 30-day rule (for testing)
 
 Choose number of deliveries to process
