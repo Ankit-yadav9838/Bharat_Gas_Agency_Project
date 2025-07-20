@@ -1,14 +1,18 @@
 # 🇮🇳 Bharat Gas Agency Project 🔥
+<<<<<<< HEAD
 
 ## 📌 Overview
 
+=======
+# 📌 Overview
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 The **Bharat Gas Agency Project** is a Java-based console application simulating a real-world gas cylinder booking and delivery system. It was developed as an academic project to demonstrate:
-
 - ✅ Java OOP principles
 - 📁 File handling
 - 🔐 OTP validation
 - 📊 Report & Invoice generation
 
+<<<<<<< HEAD
 ## 📚 Table of Contents
 
 - [🚀 Features](#-features)
@@ -21,6 +25,19 @@ The **Bharat Gas Agency Project** is a Java-based console application simulating
 
 ## 🚀 Features
 
+=======
+# 📚 Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Sample Workflow](#-sample-workflow)
+- [Contact](#-connect-with-me)
+
+ # 🚀 Features
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 - 🔄 **Dynamic Booking**: Handle 1–5 deliveries per session
 - 🔐 **OTP System**: 4-digit OTP verification for secured delivery
 - 📞 **Mobile Validation**: Consumer is validated by registered number
@@ -28,14 +45,25 @@ The **Bharat Gas Agency Project** is a Java-based console application simulating
 - 📊 **Reports**: Cylinder count, late deliveries, and pending bookings
 - 🧾 **Invoice Generator**: Delivery bill with name, amount, and date
 
+<<<<<<< HEAD
 ## 🛠️ Tech Stack
+=======
+---
+# 🛠️ Tech Stack
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 
 - 🖥️ **Language**: Java (JDK 8 or later)
 - 💻 **IDE**: Visual Studio Code + Git Bash
 - 🗂️ **Version Control**: Git + GitHub
 - 🧪 **Tested On**: Windows 11
 
+<<<<<<< HEAD
 ## 📁 Project Structure
+=======
+---
+
+# 📁 Project Structure
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 
 ```
 bharat-gas-agency-project/
@@ -53,20 +81,38 @@ bharat-gas-agency-project/
     └── gasAgency.java         // Placeholder for supplier logic
 ```
 
-## 📦 Installation
+# 📦 Installation
 
+<<<<<<< HEAD
+=======
+Step 1: Clone the Repository
+
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 ```bash
 # Step 1: Clone the Repository
 git clone https://github.com/your-username/bharat-gas-agency-project.git
 cd bharat-gas-agency-project
+<<<<<<< HEAD
 
 # Step 2: Compile the Java Files
+=======
+Step 2: Compile the Java Files
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 cd src
 javac -d . Customers/*.java gasBooking/*.java gasSupplier/*.java
 
 # Step 3: Run the Application
 java Customers.Main
+<<<<<<< HEAD
 ```
+=======
+
+
+▶️ Usage
+Booking Flow:
+
+Enter whether to skip 30-day rule (for testing)
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 
 ## ▶️ [Usage](#️usage)
 
@@ -119,10 +165,14 @@ Delivered By: John Doe
 Amount: ₹825.0
 Booking Date: 29/06/2025
 Delivery Date: 06/07/2025
+<<<<<<< HEAD
 ```
 
 ## 🤝 Contribution
 
+=======
+# 🤝 Contribution
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
 Want to improve or add features?
 
 ```bash
@@ -135,6 +185,7 @@ git commit -m "Add feature: XYZ"
 
 # 4. Push to GitHub
 git push origin feature-xyz
+<<<<<<< HEAD
 ```
 
 ## 📬 [Contact](#contact)
@@ -144,3 +195,15 @@ git push origin feature-xyz
 🔗 [LinkedIn](https://www.linkedin.com/in/ankit-yadav-063216265)
 
 💡 _“Build to learn, not just to deploy.” — Ankit Yadav_
+=======
+
+# 📬 Connect With Me
+Ankit Yadav
+📧 a.k.chaudhary9838@gmail.com
+🔗 https://www.linkedin.com/in/
+ankit-yadav-063216265
+
+💡 “Build to learn, not just to deploy.” — Ankit Yadav
+
+
+>>>>>>> 13eff8654cf9fb2cefc2c000a6f52fe8627115f6
